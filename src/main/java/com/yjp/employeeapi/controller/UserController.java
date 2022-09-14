@@ -30,8 +30,12 @@ public class UserController {
     @GetMapping("/getuser/{id}")
     public ResponseEntity<Users> getUser(@PathVariable("id") int userId){
         Users user = null;
+        int a =10,b=20,sum;
         try{
             user = userService.getUserById(userId);
+            if(a>b){
+                sum = a + b;
+            }
         }catch (Exception ge){
             ge.getMessage();
         }
