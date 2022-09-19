@@ -19,7 +19,7 @@ public class UserController {
     @GetMapping("/allUsers")
     public ResponseEntity<List<Users>> getALlUsers(){
         List<Users> users = null;
-      
+
         try{
             users = userService.getALlUsers();
 
