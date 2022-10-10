@@ -19,10 +19,10 @@ public class UserController {
     @GetMapping("/allUsers")
     public ResponseEntity<List<Users>> getALlUsers(){
         List<Users> users = null;
-        int a=10,b=20,sub;
+        int m=10,n=20,sum;
         try{
             users = userService.getALlUsers();
-            sub = a - b;
+            sum = m + n;
 
         }catch (Exception ge){
             ge.getMessage();
