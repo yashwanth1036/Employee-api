@@ -22,9 +22,6 @@ public class UserController {
 
         try{
             users = userService.getALlUsers();
-            int x = 12 +16;
-            int y = 15 +15;
-            int z = x + y;
 
         }catch (Exception ge){
             ge.getMessage();
