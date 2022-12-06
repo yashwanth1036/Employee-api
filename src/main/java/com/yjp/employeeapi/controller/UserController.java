@@ -29,7 +29,7 @@ public class UserController {
         return new ResponseEntity<List<Users>>(users, HttpStatus.OK);
     }
 
-    @GetMapping("/getuser/{id}")
+    @GetMapping("/getUser/{id}")
     public ResponseEntity<Users> getUser(@PathVariable("id") int userId){
         Users user = null;
 
