@@ -19,9 +19,15 @@ public class UserController {
     @GetMapping("/allUsers")
     public ResponseEntity<List<Users>> getALlUsers(){
         List<Users> users = null;
+<<<<<<< HEAD
         // developer 2
+=======
+        int a=10,b=20,sum=0;
+
+>>>>>>> d8c8017cfe0d545896553b7c1dc13f072975e743
         try{
             users = userService.getALlUsers();
+            sum= a+b;
 
         }catch (Exception ge){
             ge.getMessage();
@@ -29,7 +35,7 @@ public class UserController {
         return new ResponseEntity<List<Users>>(users, HttpStatus.OK);
     }
 
-    @GetMapping("/getuser/{id}")
+    @GetMapping("/getUser/{id}")
     public ResponseEntity<Users> getUser(@PathVariable("id") int userId){
         Users user = null;
 
